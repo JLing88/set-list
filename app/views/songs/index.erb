@@ -1,8 +1,21 @@
-<% songs.each do |song| %>
-  <ul>
-    <li>Title: <%= song.title %></li>
-    <li>Length: <%= song.length %></li>
-    <li>Playlist: <%= song.playlist.name unless song.playlist.nil? %></li>
-    <li>Play Count: <%= song.play_count %></li>
-  </ul>
-<% end %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="/style.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Shrikhand" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id = "header"> Song </h1>
+      <div class="grid-item">
+        <% @songs.each do |song| %>
+        <ul>
+          <img src="vinyl.jpg" alt="Vinyl Photo by Adrian Korte"/>
+          <li><%= song.title %></li>
+          <li><%= song.length %> seconds</li>
+          <li>Play Count: <%= song.play_count %></li>
+        </ul>
+        <% end %>
+      </div>
+
+  </body>
+</html>

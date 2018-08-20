@@ -1,0 +1,35 @@
+body {
+  background-color: #b0efe5;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #E5E5E5;
+  border-radius: 25px;
+}
+
+img {
+  height: 85px;
+  width: 135px;
+  border-radius: 50%;
+}
+
+.grid-item {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 50px;
+  grid-column-gap: 100px;
+  height: 400px;
+  width: 400px;
+  padding: 40px;
+  font-family: 'Questrial', sans-serif;
+  font-size: 15px;
+}
+
+#header {
+  text-align: center;
+  font-family: 'Shrikhand', cursive;
+}

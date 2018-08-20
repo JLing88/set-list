@@ -5,8 +5,8 @@ class SetList < Sinatra::Base
   end
 
   get '/songs' do
-    songs = Song.all
-    erb :"songs/index", :locals => { :songs => songs }
+    @songs = Song.all
+    erb :"songs/index", :locals => { :songs => @songs }
   end
 
   get '/songs/new' do
